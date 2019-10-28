@@ -139,11 +139,40 @@ from random import randrange
 #
 # print('liczb pierwszych w przedziale (100,1000): ',k)
 
-# zad17
-tab = [[0 for col in range(5)] for row in range(8)]
-for i in range(5):
-     for y in range(8):
-        tab[i][y] = randrange(5,9)
-print(tab[i])
+# zad17                        UZUPELNIJ
+# tab = [[0 for col in range(5)] for row in range(8)]
+# # tab = [[random.randrange(5,10) for col in range(5)] for row in range(8)]
+# #print(tab)
+# for i in range(8):
+#      for y in range(5):
+#         tab[i][y] = random.randrange(5,10)
+#      print(tab[i])
 
+# zad18
+# tab = [[0 for col in range(5)] for row in range(8)]
+# counter=0
+# for i in range(8):
+#      for y in range(5):
+#         tab[i][y] = random.randrange(5,10)
+#         if tab[i][y]%2 !=0:
+#                 counter+=1
+# print(tab[i])
+# print('Liczb nieparzystych jest: ', counter)
 
+# zad19
+tekst = input("podaj teskt:")
+przes = input("podaj przesuniecie: ")
+tekst=list(tekst)
+print(len(tekst))
+
+# code in szyfr cezar
+# for i in range()
+# chr(ord('a') + 3)
+# make condition for spaces
+# display coded message
+
+# zad20
+
+# zad21
+
+# zad22
