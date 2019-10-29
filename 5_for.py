@@ -1,6 +1,7 @@
 import string
 import random
 from random import randrange
+import math
 #zad1
 # for i in range(100):
 #     print('*')
@@ -186,22 +187,65 @@ from random import randrange
 #         print(x)
 
 # zad21
-dobre=0
-zle=0
-l=[1,2,3,4,5,6,7,8,9,10]
-for i in range(10):
-    a=random.choice(l)
-    b=random.choice(l)
-    print(a, 'razy' , b)
-    odp=int(input("="))
-    if odp == a*b:
-        dobre+=1
-        print('dobra odpowiedz')
-    else:
-        zle+=1
-        print('zle, poprawny to', a*b)
-if(dobre == 10):
-    print('gratulacje!')
-print('dobre odp: ', dobre)
-print('zle odp: ', zle)
+# dobre=0
+# zle=0
+# l=[1,2,3,4,5,6,7,8,9,10]
+# for i in range(10):
+#     a=random.choice(l)
+#     b=random.choice(l)
+#     print(a, 'razy' , b)
+#     odp=int(input("="))
+#     if odp == a*b:
+#         dobre+=1
+#         print('dobra odpowiedz')
+#     else:
+#         zle+=1
+#         print('zle, poprawny to', a*b)
+# if(dobre == 10):
+#     print('gratulacje!')
+# print('dobre odp: ', dobre)
+# print('zle odp: ', zle)
 
+#zad22
+#FIRST SOLUTION
+# # pascals_tri_formula = [] # don't collect in a global variable.
+# def combination(n, r): # correct calculation of combinations, n choose k
+#     return int((math.factorial(n)) / ((math.factorial(r)) * math.factorial(n - r)))
+
+# def for_test(x, y): # don't see where this is being used...
+#     for y in range(x):
+#         return combination(x, y)
+
+# def pascals_triangle(rows):
+#     result = [] # need something to collect our results in
+#     # count = 0 # avoidable! better to use a for loop, 
+#     # while count <= rows: # can avoid initializing and incrementing 
+#     for count in range(rows): # start at 0, up to but not including rows number.
+#         # this is really where you went wrong:
+#         row = [] # need a row element to collect the row in
+#         for element in range(count + 1): 
+#             # putting this in a list doesn't do anything.
+#             # [pascals_tri_formula.append(combination(count, element))]
+#             row.append(combination(count, element))
+#         result.append(row)
+#         # count += 1 # avoidable
+#     return result
+
+def gen(n,r=[]):
+    for x in range(n):
+        l = len(r)
+        r = [1 if i == 0 or i == l else r[i-1]+r[i] for i in range(l+1)]
+        yield r
+
+def draw_beautiful(n):
+    ps = list(gen(n))
+    max = len(' '.join(map(str,ps[-1])))
+    for p in ps:
+        print(' '.join(map(str,p)).center(max)+'\n')
+
+# now we can print a result:
+rows = int(input('Podaj ile wierszy trojkata Pascala: '))
+#FIRST SOLUTION
+# for row in pascals_triangle(rows):
+#      print(row)
+draw_beautiful(rows)
