@@ -181,6 +181,9 @@ from random import randrange
 #     print(chr(coded1), end="")
 
 # zad20
+# for x in range(200):
+#     if x%5 == 2 and x%6 == 3 and x%7 == 2:
+#         print(x)
 
 # zad21
 
