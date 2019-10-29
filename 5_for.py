@@ -160,16 +160,25 @@ from random import randrange
 # print('Liczb nieparzystych jest: ', counter)
 
 # zad19
-tekst = input("podaj teskt:")
-przes = input("podaj przesuniecie: ")
-tekst=list(tekst)
-print(len(tekst))
+# tekst = input("podaj tekst:")
+# przes = int(input("podaj przesuniecie: "))
+# tekst=list(tekst)
+# # print(len(tekst))
 
-# code in szyfr cezar
-# for i in range()
-# chr(ord('a') + 3)
-# make condition for spaces
-# display coded message
+# # code in szyfr cezar
+# for i in tekst:
+#     coded = ord(i) + przes
+# # display coded message
+#     print(chr(coded), end="")
+
+# tekst1 = input("podaj zakodowany tekst:")
+# przes1 = int(input("podaj przesuniecie kodu: "))
+
+# # code in szyfr cezar
+# for i in tekst1:
+#     coded1 = ord(i) - przes
+# # display coded message
+#     print(chr(coded1), end="")
 
 # zad20
 
