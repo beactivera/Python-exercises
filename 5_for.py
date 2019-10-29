@@ -186,5 +186,22 @@ from random import randrange
 #         print(x)
 
 # zad21
+dobre=0
+zle=0
+l=[1,2,3,4,5,6,7,8,9,10]
+for i in range(10):
+    a=random.choice(l)
+    b=random.choice(l)
+    print(a, 'razy' , b)
+    odp=int(input("="))
+    if odp == a*b:
+        dobre+=1
+        print('dobra odpowiedz')
+    else:
+        zle+=1
+        print('zle, poprawny to', a*b)
+if(dobre == 10):
+    print('gratulacje!')
+print('dobre odp: ', dobre)
+print('zle odp: ', zle)
 
-# zad22
