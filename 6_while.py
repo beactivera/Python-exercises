@@ -14,4 +14,9 @@ import math
 #     print(m)
 #     n+=1
 
-   
+#zad3
+n=1000
+while (1/n)<0.0043212:
+    # print(n)
+    n-=1
+print("najmniejsza liczba naturalna to: ",n+1)
