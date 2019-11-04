@@ -50,6 +50,8 @@ import math
 #
 # print(newList)
 # print(maxTen)
+# lista skladana:
+#  x=[random.randint(-2,18) for i in range(10)]
 
 #zad8               UZUPELNIJ
 
