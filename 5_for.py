@@ -53,7 +53,13 @@ import math
 # lista skladana:
 #  x=[random.randint(-2,18) for i in range(10)]
 
-#zad8               UZUPELNIJ
+#zad8
+# D={}
+# x= int(input('podaj liczbe od 1 do 26: '))
+# for i in range(97,123):
+#         D.setdefault(chr(i),(i-96)**2)
+# print(D)
+# print(D[chr(x+97)])
 
 
 #zad9
