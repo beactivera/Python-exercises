@@ -22,9 +22,18 @@ import math
 # print("najmniejsza liczba naturalna to: ",n+1)
 
 #zad4
-n=1
-suma=0
-while suma<11:
-    suma+=1/n
-    n+=1
-print(n)
+# n=1
+# suma=0
+# while suma<11:
+#     suma+=1/n
+#     n+=1
+# print(n)
+
+#zad5
+l=['a']
+znak = input("podaj znaki: ")
+# print(znak)
+while znak != 'stop':
+    l.append(znak)
+    znak = input("podaj kolejny znak: ")
+print(l)
