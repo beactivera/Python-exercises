@@ -30,10 +30,19 @@ import math
 # print(n)
 
 #zad5
-l=['a']
-znak = input("podaj znaki: ")
-# print(znak)
-while znak != 'stop':
-    l.append(znak)
-    znak = input("podaj kolejny znak: ")
-print(l)
+# l=['a']
+# znak = input("podaj znaki: ")
+# # print(znak)
+# while znak != 'stop':
+#     l.append(znak)
+#     znak = input("podaj kolejny znak: ")
+# print(l)
+
+#zad6
+a = int(input('Podaj pierwsza liczbe: '))
+b = int(input('Podaj druga liczbe: '))
+while b!=0:
+    r=a%b
+    a=b
+    b=r
+print("NWD tych liczb: " a)
