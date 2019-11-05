@@ -39,10 +39,20 @@ import math
 # print(l)
 
 #zad6
-a = int(input('Podaj pierwsza liczbe: '))
-b = int(input('Podaj druga liczbe: '))
-while b!=0:
-    r=a%b
-    a=b
-    b=r
-print("NWD tych liczb: " a)
+# a = int(input('Podaj pierwsza liczbe: '))
+# b = int(input('Podaj druga liczbe: '))
+# while b!=0:
+#     r=a%b
+#     a=b
+#     b=r
+# print("NWD tych liczb: " a)
+
+#zad7
+a = input('Podaj pierwszy wyraz: ')
+b = input('Podaj drugi wyraz: ')
+lancuch = ''
+while len(a) != len(b):
+    print(lancuch) 
+for i in range(len(a)):
+    lancuch = lancuch + a[i] + b[i]
+print(lancuch)        
