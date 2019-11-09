@@ -32,9 +32,21 @@
 # print(suma-1)
 
 #zad6
-n=0
-wynik=0
-while wynik<10:
-    n+= 1
-    wynik+=float(1)/n
-print(n)
+# n=0
+# wynik=0
+# while wynik<10:
+#     n+= 1
+#     wynik+=float(1)/n
+# print(n)
+
+#zad7
+n = int(input('Podaj liczbe: '))
+i=0
+while i<n:
+    i+=1
+    if i**2==n:
+        print('podana liczba jest kwadratem liczby ',i)
+        break
+    elif i+1==n:
+        print('podana liczba nie jest kwadratem innej liczby naturalnej')
+        
