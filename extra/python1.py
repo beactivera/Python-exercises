@@ -25,11 +25,17 @@
 #     print(i, " do ", j, " jest rowne ", i**j," jest mniejsze od ", j, " do ", i, " rowne ", j**i )
 
 #zad12
-#pierwiastek z dwoch
-print(2.**(1.0/2.0))
-#pierwiastek trzeciego stopnia z trzech
-print(3.**(1.0/3.0))
-#pierwiastek piatego stopnia z pieciu
-print(5.**(1.0/5.0))
-#pierwiastek n-tego stopnia z pieciu
-print(5.**(1.0,n))
+# #pierwiastek z dwoch
+# print(2.**(1.0/2.0))
+# #pierwiastek trzeciego stopnia z trzech
+# print(3.**(1.0/3.0))
+# #pierwiastek piatego stopnia z pieciu
+# print(5.**(1.0/5.0))
+# #pierwiastek n-tego stopnia z pieciu
+# print(5.**(1.0,n))
+
+#zad9
+f = 93.7415
+przed = int(f)%10
+po = int(f*10)%10
+print(przed, po)
