@@ -35,7 +35,16 @@
 # print(5.**(1.0,n))
 
 #zad9
-f = 93.7415
-przed = int(f)%10
-po = int(f*10)%10
-print(przed, po)
+# f = 93.7415
+# przed = int(f)%10
+# po = int(f*10)%10
+# print(przed, po)
+
+#zad8
+R = int(input('Podaj rok: '))
+if R%4==0 and R%100!=0:
+    print('rok jest przestepny')
+elif R%400==0:
+    print('rok jest przestepny')
+else:
+    print('rok nie jest przestepny')
