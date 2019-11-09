@@ -24,9 +24,17 @@
 # print(suma)
 
 #zad5
-suma=0
+# suma=0
+# wynik=0
+# while wynik<1000000:
+#     suma+= 1
+#     wynik+=suma
+# print(suma-1)
+
+#zad6
+n=0
 wynik=0
-while wynik<1000000:
-    suma+= 1
-    wynik+=suma
-print(suma-1)
+while wynik<10:
+    n+= 1
+    wynik+=float(1)/n
+print(n)
