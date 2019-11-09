@@ -40,13 +40,19 @@
 # print(n)
 
 #zad7
-n = int(input('Podaj liczbe: '))
-i=0
-while i<n:
-    i+=1
-    if i**2==n:
-        print('podana liczba jest kwadratem liczby ',i)
-        break
-    elif i+1==n:
-        print('podana liczba nie jest kwadratem innej liczby naturalnej')
+# n = int(input('Podaj liczbe: '))
+# i=0
+# while i<n:
+#     i+=1
+#     if i**2==n:
+#         print('podana liczba jest kwadratem liczby ',i)
+#         break
+#     elif i+1==n:
+#         print('podana liczba nie jest kwadratem innej liczby naturalnej')
         
+#zad8
+n = int(input('Podaj liczbe: '))
+silnia = 1
+for i in range(1,n+1):
+    silnia *=i 
+print('silnia tej liczby wynosi: ', silnia)
