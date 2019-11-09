@@ -18,7 +18,15 @@
 #          print(i)
 
 #zad4
+# suma=0
+# for i in range(0,101):
+#     suma += i
+# print(suma)
+
+#zad5
 suma=0
-for i in range(0,101):
-    suma += i
-print(suma)
+wynik=0
+while wynik<1000000:
+    suma+= 1
+    wynik+=suma
+print(suma-1)
