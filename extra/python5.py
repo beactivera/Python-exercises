@@ -22,13 +22,25 @@ import copy
 # print(l3)
 
 #zad2
-l = []
+# l = []
+# # for i in range(10):
+# #     l = l + [i**2]
+# # print(l)
 # for i in range(10):
-#     l = l + [i**2]
+#     if i%2 == 0:
+#         l = l + [-(i**2)]
+#     else:
+#         l = l + [i**2]
 # print(l)
-for i in range(10):
-    if i%2 == 0:
-        l = l + [-(i**2)]
-    else:
-        l = l + [i**2]
+
+#zad3
+n = int(input('Podaj ilosc liczb do wypisania: '))
+l = []
+
+for i in range(n):
+    m = int(input('Podaj liczbe: '))
+    l += [m]
 print(l)
+lmin = min(l)
+lmax = max(l)
+print('min = ', lmin, 'max = ', lmax)
