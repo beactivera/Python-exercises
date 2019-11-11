@@ -51,8 +51,16 @@
 #         print('podana liczba nie jest kwadratem innej liczby naturalnej')
         
 #zad8
-n = int(input('Podaj liczbe: '))
-silnia = 1
-for i in range(1,n+1):
-    silnia *=i 
-print('silnia tej liczby wynosi: ', silnia)
+# n = int(input('Podaj liczbe: '))
+# silnia = 1
+# for i in range(1,n+1):
+#     silnia *=i 
+# print('silnia tej liczby wynosi: ', silnia)
+
+#zad9
+n = int(input('podaj liczbe: '))
+m = int(input('podaj do ktorej potegi: '))
+wynik = 1
+for i in range(m):
+    wynik*=n
+print(wynik)
