@@ -21,7 +21,7 @@ import copy
 # print(l)
 # print(l3)
 
-#zad2
+# zad2
 # l = []
 # # for i in range(10):
 # #     l = l + [i**2]
@@ -33,14 +33,25 @@ import copy
 #         l = l + [i**2]
 # print(l)
 
-#zad3
-n = int(input('Podaj ilosc liczb do wypisania: '))
-l = []
+# zad3
+# n = int(input('Podaj ilosc liczb do wypisania: '))
+# l = []
 
-for i in range(n):
-    m = int(input('Podaj liczbe: '))
-    l += [m]
+# for i in range(n):
+#     m = int(input('Podaj liczbe: '))
+#     l += [m]
+# print(l)
+# lmin = min(l)
+# lmax = max(l)
+# print('min = ', lmin, 'max = ', lmax)
+
+#zad5
+l = []
+for i in range(100, 151):
+    l += [i]
 print(l)
-lmin = min(l)
-lmax = max(l)
-print('min = ', lmin, 'max = ', lmax)
+
+for x in range(9):
+    del l[(4*x)]
+print(l)
+
