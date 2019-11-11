@@ -46,12 +46,38 @@ import copy
 # print('min = ', lmin, 'max = ', lmax)
 
 #zad5
-l = []
-for i in range(100, 151):
-    l += [i]
-print(l)
+# l = []
+# for i in range(100, 151):
+#     l += [i]
+# print(l)
 
-for x in range(9):
-    del l[(4*x)]
-print(l)
+# for x in range(9):
+#     del l[(4*x)]
+# print(l)
 
+#zad6
+l = [1,6,9,4,5,2,8,2,7,6]
+
+l2 = copy.copy(l)
+l2[9] = l[0]
+print(l2)
+
+l3 = copy.copy(l)
+l3[0] = l[9]
+print(l3)
+
+l4 = copy.copy(l)
+l4.reverse()
+print(l4)
+
+l5 = copy.copy(l)
+for i in range(len(l)):
+    if l5[i]%2 != 0:
+        l5[i] = 0
+print(l5)
+
+l6 = copy.copy(l)
+for i in range(len(l)):
+    if l6[i]%2 == 0 or i%2 == 0:
+        l6[i] = 0
+print('ostatnia lista: ',l6)
