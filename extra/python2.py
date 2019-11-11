@@ -58,9 +58,20 @@
 # print('silnia tej liczby wynosi: ', silnia)
 
 #zad9
-n = int(input('podaj liczbe: '))
-m = int(input('podaj do ktorej potegi: '))
-wynik = 1
-for i in range(m):
-    wynik*=n
-print(wynik)
+# n = int(input('podaj liczbe: '))
+# m = int(input('podaj do ktorej potegi: '))
+# wynik = 1
+# for i in range(m):
+#     wynik*=n
+# print(wynik)
+
+#zad10
+n = int(input('Podaj liczbe: '))
+dzielniki = []
+iloscdziel = 0
+for k in range(1,n+1):
+    if n%k == 0:
+        dzielniki.append(k)
+        iloscdziel+=1
+print("dzielniki podanej liczby wynosza: ",dzielniki)
+print('jest ich: ', iloscdziel)
