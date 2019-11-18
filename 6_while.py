@@ -1,4 +1,5 @@
 import math
+import random
 
 #zad1
 # liczba = int(input("podaj liczbe: "))
@@ -48,11 +49,24 @@ import math
 # print("NWD tych liczb: " a)
 
 #zad7
-a = input('Podaj pierwszy wyraz: ')
-b = input('Podaj drugi wyraz: ')
-lancuch = ''
-while len(a) != len(b):
-    print(lancuch) 
-for i in range(len(a)):
-    lancuch = lancuch + a[i] + b[i]
-print(lancuch)        
+# a = input('Podaj pierwszy wyraz: ')
+# b = input('Podaj drugi wyraz: ')
+# lancuch = ''
+# while len(a) != len(b):
+#     print(lancuch) 
+# for i in range(len(a)):
+#     lancuch = lancuch + a[i] + b[i]
+# print(lancuch)        
+
+#zad8
+liczba = random.randint(13,100)
+print(liczba)
+x = int(input('Jaka liczbe wylosowal program? '))
+# print(x)
+proba = 1
+while x!=liczba:
+    x = int(input('Jaka liczbe wylosowal program? '))
+    proba +=1
+    if x == 'q':
+        print("liczba szukana to: ", liczba, "wykonales ", proba, " prob")
+print('Brawo! Odgadles liczbe po ', proba, ' probach')
