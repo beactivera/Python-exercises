@@ -72,15 +72,30 @@ import random
 # print('Brawo! Odgadles liczbe po ', proba, ' probach')
 
 #zad9
-dobrze=0
-while dobrze<3:
-    a=random.randint(100,1000)
-    b=random.randint(100,1000)
-    dodawanie = a,b
-    print(dodawanie)
-    wynik = int(input('Podaj wynik dodawania tych liczb: '))
-    if wynik !=a+b:
-        dobrze = 0
+# dobrze=0
+# while dobrze<3:
+#     a=random.randint(100,1000)
+#     b=random.randint(100,1000)
+#     dodawanie = a,b
+#     print(dodawanie)
+#     wynik = int(input('Podaj wynik dodawania tych liczb: '))
+#     if wynik !=a+b:
+#         dobrze = 0
+#     else:
+#         dobrze+=1
+# print('Gratulacje! dobry wynik trzy razy pod rzad!')
+
+#zad10
+D={}
+produkt=input('Podaj nazwe produktu: ')
+while produkt != "quit":
+    if produkt in D.keys():
+        cena=input('Produkt juz istnieje, podaj jego cene: ')
+        D2={produkt:cena}
+        # print(D2)
+        D.update(D2)
     else:
-        dobrze+=1
-print('Gratulacje! dobry wynik trzy razy pod rzad!')
+        cena = input('Podaj cene produktu: ')
+        D[produkt]=cena
+    produkt=input('Podaj nazwe produktu: ')
+print('Oto nasz spis: ', D)
