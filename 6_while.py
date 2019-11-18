@@ -59,14 +59,28 @@ import random
 # print(lancuch)        
 
 #zad8
-liczba = random.randint(13,100)
-print(liczba)
-x = int(input('Jaka liczbe wylosowal program? '))
-# print(x)
-proba = 1
-while x!=liczba:
-    x = int(input('Jaka liczbe wylosowal program? '))
-    proba +=1
-    if x == 'q':
-        print("liczba szukana to: ", liczba, "wykonales ", proba, " prob")
-print('Brawo! Odgadles liczbe po ', proba, ' probach')
+# liczba = random.randint(13,100)
+# print(liczba)
+# x = int(input('Jaka liczbe wylosowal program? '))
+# # print(x)
+# proba = 1
+# while x!=liczba:
+#     x = int(input('Jaka liczbe wylosowal program? '))
+#     proba +=1
+#     if x == 'q':
+#         print("liczba szukana to: ", liczba, "wykonales ", proba, " prob")
+# print('Brawo! Odgadles liczbe po ', proba, ' probach')
+
+#zad9
+dobrze=0
+while dobrze<3:
+    a=random.randint(100,1000)
+    b=random.randint(100,1000)
+    dodawanie = a,b
+    print(dodawanie)
+    wynik = int(input('Podaj wynik dodawania tych liczb: '))
+    if wynik !=a+b:
+        dobrze = 0
+    else:
+        dobrze+=1
+print('Gratulacje! dobry wynik trzy razy pod rzad!')
