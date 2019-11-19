@@ -86,16 +86,34 @@ import random
 # print('Gratulacje! dobry wynik trzy razy pod rzad!')
 
 #zad10
-D={}
-produkt=input('Podaj nazwe produktu: ')
-while produkt != "quit":
-    if produkt in D.keys():
-        cena=input('Produkt juz istnieje, podaj jego cene: ')
-        D2={produkt:cena}
-        # print(D2)
-        D.update(D2)
+# D={}
+# produkt=input('Podaj nazwe produktu: ')
+# while produkt != "quit":
+#     if produkt in D.keys():
+#         cena=input('Produkt juz istnieje, podaj jego cene: ')
+#         D2={produkt:cena}
+#         # print(D2)
+#         D.update(D2)
+#     else:
+#         cena = input('Podaj cene produktu: ')
+#         D[produkt]=cena
+#     produkt=input('Podaj nazwe produktu: ')
+# print('Oto nasz spis: ', D)
+
+#zad11
+lista=['O','R']
+sloneczka=100
+while sloneczka>0 and sloneczka!=2*100:
+    liczba =random.choice(lista)
+    print(liczba)
+    x=input("Orzel czy reszka? (O/R): ")
+    if x == liczba:
+        sloneczka+=9
+        print(sloneczka)
     else:
-        cena = input('Podaj cene produktu: ')
-        D[produkt]=cena
-    produkt=input('Podaj nazwe produktu: ')
-print('Oto nasz spis: ', D)
+        sloneczka-=10
+        print(sloneczka)
+if sloneczka == 200:
+    print('Uzyskales 200 sloneczek!')
+elif sloneczka == 0 or sloneczka<0:
+    print('Nie stać Cię na kolejną runde!')
