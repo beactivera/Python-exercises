@@ -101,19 +101,44 @@ import random
 # print('Oto nasz spis: ', D)
 
 #zad11
-lista=['O','R']
-sloneczka=100
-while sloneczka>0 and sloneczka!=2*100:
-    liczba =random.choice(lista)
-    print(liczba)
-    x=input("Orzel czy reszka? (O/R): ")
-    if x == liczba:
-        sloneczka+=9
-        print(sloneczka)
-    else:
-        sloneczka-=10
-        print(sloneczka)
-if sloneczka == 200:
-    print('Uzyskales 200 sloneczek!')
-elif sloneczka == 0 or sloneczka<0:
-    print('Nie stać Cię na kolejną runde!')
+# lista=['O','R']
+# sloneczka=100
+# while sloneczka>0 and sloneczka!=2*100:
+#     liczba =random.choice(lista)
+#     print(liczba)
+#     x=input("Orzel czy reszka? (O/R): ")
+#     if x == liczba:
+#         sloneczka+=9
+#         print(sloneczka)
+#     else:
+#         sloneczka-=10
+#         print(sloneczka)
+# if sloneczka == 200:
+#     print('Uzyskales 200 sloneczek!')
+# elif sloneczka == 0 or sloneczka<0:
+#     print('Nie stać Cię na kolejną runde!')
+
+#zad12
+a=1
+b=1
+c=1
+while 0<a<=b<=c<=100:
+    n=int(input('Podaj ile chcesz wyswietlic trojek pitagorejskich: '))
+    licznik = 0
+    for k in range(1,100):
+        for m in range(1,100):
+            if licznik <n:
+                if k>m and (k+m)%2!=0:
+                    a=k**2-m**2
+                    b=2*k*m
+                    c=k**2+m**2
+                    if a>b:# if a>b and a<b
+                        print('(',b,',',a,',',c,')')
+                    else:
+                        print('(',a,',',b,',',c,')')
+                    licznik+=1
+            else:
+                break
+
+print('koniec')
+    
