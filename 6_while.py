@@ -119,26 +119,39 @@ import random
 #     print('Nie stać Cię na kolejną runde!')
 
 #zad12
-a=1
-b=1
-c=1
-while 0<a<=b<=c<=100:
-    n=int(input('Podaj ile chcesz wyswietlic trojek pitagorejskich: '))
-    licznik = 0
-    for k in range(1,100):
-        for m in range(1,100):
-            if licznik <n:
-                if k>m and (k+m)%2!=0:
-                    a=k**2-m**2
-                    b=2*k*m
-                    c=k**2+m**2
-                    if a>b:# if a>b and a<b
-                        print('(',b,',',a,',',c,')')
-                    else:
-                        print('(',a,',',b,',',c,')')
-                    licznik+=1
-            else:
-                break
+# a=1
+# b=1
+# c=1
+# while 0<a<=b<=c<=100:
+#     n=int(input('Podaj ile chcesz wyswietlic trojek pitagorejskich: '))
+#     licznik = 0
+#     for k in range(1,100):
+#         for m in range(1,100):
+#             if licznik <n:
+#                 if k>m and (k+m)%2!=0:
+#                     a=k**2-m**2
+#                     b=2*k*m
+#                     c=k**2+m**2
+#                     if a>b:# if a>b and a<b
+#                         print('(',b,',',a,',',c,')')
+#                     else:
+#                         print('(',a,',',b,',',c,')')
+#                     licznik+=1
+#             else:
+#                 break
 
-print('koniec')
+# print('koniec')
+
+n=int(input('Podaj liczbe: '))
+x=0
+b=0
+while(x!=n):
+    for a in range(1,b):
+        c=(a*a+b*b)**0.5
+        if c%1==0:
+            print(a,b,int(c))
+            x+=1
+            if x==10:
+                break
+    b+=1
     
