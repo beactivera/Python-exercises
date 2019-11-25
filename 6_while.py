@@ -142,16 +142,28 @@ import random
 
 # print('koniec')
 
-n=int(input('Podaj liczbe: '))
-x=0
-b=0
-while(x!=n):
-    for a in range(1,b):
-        c=(a*a+b*b)**0.5
-        if c%1==0:
-            print(a,b,int(c))
-            x+=1
-            if x==10:
-                break
-    b+=1
+# n=int(input('Podaj liczbe: '))
+# x=0
+# b=0
+# while(x!=n):
+#     for a in range(1,b):
+#         c=(a*a+b*b)**0.5
+#         if c%1==0:
+#             print(a,b,int(c))
+#             x+=1
+#             if x==10:
+#                 break
+#     b+=1
     
+n=int(input("Podaj liczbe naturalna: "))
+while n != 0:
+    for a in range(1,101):
+        for b in range(a,101):
+            for c in range(b,101):
+                if math.pow(a,2) + math.pow(b,2) == math.pow(c,2) and n!=0:
+                    print(a,b,c)
+                    n = n - 1
+                elif a==b==c==100:
+                    n==0
+                elif n==0:
+                    break
