@@ -1,0 +1,181 @@
+Islandia - Rejkiawik
+Irlandia - Dublin
+Portugalia - Lisbona
+Hiszpania - Madryt
+Wielka Brytania - Londyn
+Francja - Pary¿
+Holandia - Amsterdam
+Belgia - Bruksela
+Luksemburg - Luksemburg
+Szwajcaria - Berno
+W³ochy - Rzym
+Norwegia - Oslo
+Dania - Kopenhaga
+Niemcy - Berlin
+Liechtenstein - Vaduz
+Malta - Valletta
+Szwecja - Sztokholm
+Polska - Warszawa
+Republika Czeska - Praga
+Slowacja - Bratys³awa
+Austria - Wiedeñ
+Wêgry - Budapeszt
+S³owenia - Lublana
+Chorwacja - Zagrzeb
+Boœnia i Hercegowina - Sarajewo
+Jugos³awia - Belgrad
+Albania - Tirana
+Macedonia - Skopie
+Grecja - Ateny
+Finlandia - Helsinki
+Estonia - Tallin
+£otwa - Ryga
+Litwa - Wilno
+Bia³oruœ - Miñsk
+Ukraina - Kijów
+Rumunia - Bukareszt
+Mo³dawia - Kiszyniów
+Bu³garia - Sofia
+
+
+Turcja - Ankara
+Cypr - Nikozja
+Rosja - Moskwa
+Liban - Bejrut
+Izrael - Tel Awiw
+Syria - Damaszek
+Jordania - Amman
+Gruzja - Tbilisi
+Azerbejd¿an
+
+
+Armenia - Erywan
+Irak - Bagdad
+Arabia Saudyjska - Rijad
+Kuwejt - Kuwejt
+Jemen - Sana
+Oman - Maskat
+ZEA - Abu- Zabi
+Bahrajn - Al-Manama
+Katar - Al.-Dauha
+Iran - Teheran
+Kazachstan - A³ma-Ata (Astana)
+Uzbekistan - Taszkent
+Kirgistan - Biszkek
+Turkmenistan - Aszchabad
+Tad¿ykistan - Duszanbe
+Afganistan - Kabul
+Pakistan - Islamabad
+Indie - Delhi
+Sri Lanka - Kolombo
+Nepal - Katmandu
+Bhutan - Thimphu
+Chiny - Pekin
+Mongolia - U³an-Bator
+Birma - Rangun
+Tajlandia - Bangkok
+Laos - Wientan
+Wietnam - Hanoi
+Kambod¿a - Phnom Penh
+Malezja - Kuala Lumpur
+Indonezja - D¿akarta
+Filipiny - Manila
+Tajwan - Tajpej
+Korea Pó³nocna - Phenian
+Korea Po³udniowa - Seul
+Japonia - Tokjo
+Singapur - Singapur
+
+
+
+Maroko - Rabat
+Algieria - Algier
+Tunezja - Tunis
+Libia - Trypolis
+Egipt - Kair
+Sahara Zachodnia - Al-Ujun
+Mauretania - Nawakszut
+Mali - Bamako
+Niger - Niamej
+Czad - Nd¿amena
+Sudan - Chartum
+Erytrea - Asmara
+Senegal - Dakar
+Gambia - Band¿ul
+Gwinea - Bissau- Bissau
+Gwinea - Konkary
+Sierra Leone - Freetown
+Liberia - Monrowia
+WKS - Jamusukro
+Burkina Faso - Wagadugu
+Ghana - Akra
+Togo - Lome
+Benin - Porto Novo
+Nigeria - Abud¿a
+Kamerun - Jaunde
+Rep.Œrod.-Afr. - Bangi
+Etiopia - Addis Abeba
+D¿ibuti - D¿ibuti
+Somalia - Mogadiszu
+Gabon - Libre Ville
+Kongo - Brazza Ville
+Zair - Kinszasa
+Uganda - Kampala
+Ruanda - Kigali
+Burundi - Bu¿umbura
+Kenia - Nairobi
+Tanzania - Dodoma
+Angola - Luanada
+Zambia - Lusaka
+Malawi - Lilongwe
+Namibia - Windhuk
+Bostwana - Gaborone
+Zimbabwe - Harare
+Mozambik - Maputo
+Madagaskar - Antanarywa
+RPA - Pretoria
+Suazi - Mbabane
+Lesoto - Maseru
+
+
+
+Kanada - Ottawa
+USA - Waszyngton
+Meksyk - Meksyk
+
+
+
+Kuba - Hawana
+Jamajka - Kingston
+Bahamy - Nassau
+Haiti - Port-Au-Prince
+Dominikana - Santo Domingo
+Gwatemala - Gwatemala
+Belize - Belmopan
+Salwador - San Salwador
+Honduras - Tegucigalpa
+Nikaragua - Managua
+Kostaryka - San Jose
+Panama - Panama
+
+
+
+Kolumbia - Bogota
+Wenezuela - Caracas
+Gujana - Georgetown
+Surinam - Paramaribo
+Gujana Francuska - Kajenna
+Ekwador - Quito
+Peru - Lima
+Brazylia - Brasilia
+Boliwia - La Paz
+Chile - Santiago
+Argentyna - Buenos Aires
+Paragwaj - Asuncion
+Urugwaj - Montevideo
+
+
+
+Australia - Canberra
+Nowa Gwinea - Port Moresby
+Nowa Zelandia - Wellington
