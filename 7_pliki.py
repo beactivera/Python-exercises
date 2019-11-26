@@ -1,12 +1,16 @@
 import linecache
+import string
 #zad1
 
-# text = open('cytaty.txt').read()
+# text = open('cytaty.txt')
+# text.read()
 # print(text)
+# text.close()
 
 #zad2
 
-# text = open('cytaty.txt','r').read()
+# text = open('cytaty.txt','r')
+# text.read()
 # # text.encode='utf-8'
 # print(text)
 # # ilosc_wierszy = len(open('cytaty.txt').readlines())
@@ -16,9 +20,11 @@ import linecache
 # for i in range(len(lines)):
 #     if i%2!=0:
 #        print(lines[i])
+# text.close()
 
 #zad3
-# text = open('cytaty.txt','r').read()
+# text = open('cytaty.txt','r')
+# text.read()
 # # text.encode='utf-8'
 # # print(text)
 # # ilosc_wierszy = len(open('cytaty.txt').readlines())
@@ -30,6 +36,7 @@ import linecache
 
 # for i in range(a-1,b+1):
 #     print(lines[i])
+# text.close()
 
 #zad4
 
@@ -39,7 +46,9 @@ import linecache
 # nowy_tekst2 = input("podaj tekst do wpisania: ")
 # lista.append(nowy_tekst2)
 # print(lista)
-# open('nowy_plik.txt', 'w').writelines(lista)
+# plik = open('nowy_plik.txt', 'w')
+# plik.writelines(lista)
+# plik.close()
 
 
 #zad5
@@ -61,7 +70,10 @@ import linecache
 
 
 #zad7
-plik = open('nieskonczonosc.txt','r').read()
-open('nowy_plik_zad7.txt', 'w').write(plik)
+# plik = open('nieskonczonosc.txt','r').read()
+# open('nowy_plik_zad7.txt', 'w').write(plik)
+
+
+
 
 
