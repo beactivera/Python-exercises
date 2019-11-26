@@ -43,14 +43,20 @@ import linecache
 
 
 #zad5
-lista = []
-nowy_tekst = input("podaj tekst do wpisania: ")
-lista.append(nowy_tekst)
-nowy_tekst2 = input("podaj tekst do wpisania: ")
-lista.append(nowy_tekst2)
-print(lista)
-plik = open('nieskonczonosc.txt', 'a')
-plik.writelines(lista)
-plik.close()
+# lista = []
+# nowy_tekst = input("podaj tekst do wpisania: ")
+# lista.append(nowy_tekst)
+# nowy_tekst2 = input("podaj tekst do wpisania: ")
+# lista.append(nowy_tekst2)
+# print(lista)
+# plik = open('nieskonczonosc.txt', 'a')
+# plik.writelines(lista)
+# plik.close()
+
+
+#zad6
+plik = open('nieskonczonosc.txt').read()
+plik = plik.upper()
+print(plik)
 
 
