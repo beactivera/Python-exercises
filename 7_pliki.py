@@ -55,8 +55,13 @@ import linecache
 
 
 #zad6
-plik = open('nieskonczonosc.txt').read()
-plik = plik.upper()
-print(plik)
+# plik = open('nieskonczonosc.txt').read()
+# plik = plik.upper()
+# print(plik)
+
+
+#zad7
+plik = open('nieskonczonosc.txt','r').read()
+open('nowy_plik_zad7.txt', 'w').write(plik)
 
 
