@@ -91,21 +91,29 @@ import string
 
 
 #zad8
-with open('nieskonczonosc.txt') as f: 
-    for line in f: 
-        print(line)
-plik = open('nieskonczonosc.txt','r').read()
-encoding = 'UTF-8'  # polskie znaki - czesc znakow
-words = plik.split(' ')
-print(words)
-dlugosc=0
-slowo=''
-for i in words:
-    if len(i)>dlugosc:
-        dlugosc=len(i)
-        slowo=i
-print(dlugosc, slowo)
+# with open('nieskonczonosc.txt') as f: 
+#     for line in f: 
+#         print(line)
+# plik = open('nieskonczonosc.txt','r').read()
+# encoding = 'UTF-8'  # polskie znaki - czesc znakow
+# words = plik.split(' ')
+# print(words)
+# dlugosc=0
+# slowo=''
+# for i in words:
+#     if len(i)>dlugosc:
+#         dlugosc=len(i)
+#         slowo=i
+# print(dlugosc, slowo)
 
+
+#zad9
+text = open('cytaty.txt','r')
+text.read()
+# text.encode='utf-8'
+print(text)
+ilosc_wierszy = len(open('cytaty.txt').readlines())
+print(ilosc_wierszy)
 
 
 
