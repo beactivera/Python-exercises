@@ -108,13 +108,26 @@ import string
 
 
 #zad9
-text = open('cytaty.txt','r')
-text.read()
-# text.encode='utf-8'
-print(text)
-ilosc_wierszy = len(open('cytaty.txt').readlines())
-print(ilosc_wierszy)
+# text = open('cytaty.txt','r')
+# text.read()
+# # text.encode='utf-8'
+# print(text)
+# ilosc_wierszy = len(open('cytaty.txt').readlines())
+# print(ilosc_wierszy)
 
 
+#zad10
+import re
 
+file = "cytaty.txt"
 
+with open(file, "r+",encoding="cp1250") as f:
+    data= f.read()
+    data.replace("\n","/")
+    print(data)
+    # data = f.read()
+    # f.seek(0)
+    # f.write(re.sub(r'\n', r'/', data))
+    # f.truncate()
+    # print(data)
+    
