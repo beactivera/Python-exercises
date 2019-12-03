@@ -117,17 +117,27 @@ import string
 
 
 #zad10
-import re
+# import re
 
-file = "cytaty.txt"
+# file = "cytaty.txt"
 
-with open(file, "r+",encoding="cp1250") as f:
-    data= f.read()
-    data.replace("\n","/")
-    print(data)
-    # data = f.read()
-    # f.seek(0)
-    # f.write(re.sub(r'\n', r'/', data))
-    # f.truncate()
-    # print(data)
-    
+# with open(file, "r+",encoding="cp1250") as f:
+#     data= f.read()
+#     data.replace("\n","/")
+#     print(data)
+#     # data = f.read()
+#     # f.seek(0)
+#     # f.write(re.sub(r'\n', r'/', data))
+#     # f.truncate()
+#     # print(data)
+
+#zad11
+file = open("zmienne.txt", "r")
+zbior=file.read()
+words = zbior.split('\n')
+print(words)
+for elements in words:
+    x,y,z=elements.split(" ")
+    print(x,y,z)
+file.close()
+
