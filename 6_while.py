@@ -155,6 +155,7 @@ import random
 #                 break
 #     b+=1
     
+
 n=int(input("Podaj liczbe naturalna: "))
 while n != 0:
     for a in range(1,101):
