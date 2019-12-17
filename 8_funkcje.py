@@ -17,22 +17,36 @@ import random
 # print(wynik)
 
 #zad2
-def suma(lista):
-    suma = 0
-    for i in range(6):
-        for j in range(9):
-            suma+= lista[i][j]
-    return suma
+# def suma(lista):
+#     suma = 0
+#     for i in range(6):
+#         for j in range(9):
+#             suma+= lista[i][j]
+#     return suma
 
-def iloczyn(lista):
-    iloczyn = 1
-    for i in range(6):
-        for j in range(9):
-            iloczyn*= lista[i][j]
-    return iloczyn
+# def iloczyn(lista):
+#     iloczyn = 1
+#     for i in range(6):
+#         for j in range(9):
+#             iloczyn*= lista[i][j]
+#     return iloczyn
 
-lista = [[random.randrange(10,100) for col in range(9)] for row in range(6)]
-print(lista)
+# lista = [[random.randrange(10,100) for col in range(9)] for row in range(6)]
+# print(lista)
 
-print(suma(lista))
-print(iloczyn(lista))
+# print(suma(lista))
+# print(iloczyn(lista))
+
+#zad3
+def max_z_listy(lista):
+    return max(lista)
+
+lista = []
+n = int(input('Podaj ile elementow w liscie: '))
+
+for i in range(n):
+    lista.append(math.sin(i))
+# print(lista)
+
+maxlist = max_z_listy(lista)
+print(maxlist)
