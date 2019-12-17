@@ -55,14 +55,28 @@ import random
 
 
 #zad4
-def usuwanie(znaki):
-    vowel = ["a","e","o","i"]
-    for i in znaki:
-        if i in vowel:
-            znaki = znaki.replace(i," ")
-    return znaki
+# def usuwanie(znaki):
+#     vowel = ["a","e","o","i"]
+#     for i in znaki:
+#         if i in vowel:
+#             znaki = znaki.replace(i," ")
+#     return znaki
 
-lancuch = input("Podaj lancuch znakow: ")
+# lancuch = input("Podaj lancuch znakow: ")
 
-nowy_lancuch = usuwanie(lancuch)
-print(nowy_lancuch)
+# nowy_lancuch = usuwanie(lancuch)
+# print(nowy_lancuch)
+
+
+#zad5
+def porownanie(lista1, lista2):
+    return(bool(lista1 in lista2))
+
+lista1 = [random.randrange(-50,101) for i in range(10)]
+lista2 = [-2*7**2-10*t+111 for t in range(17)]
+
+print(lista1)
+print(lista2)
+
+wynik = porownanie(lista1, lista2)
+print(wynik)
