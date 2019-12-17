@@ -69,14 +69,50 @@ import random
 
 
 #zad5
-def porownanie(lista1, lista2):
-    return(bool(lista1 in lista2))
+# def porownanie(lista1, lista2):
+#     return(bool(lista1 in lista2))
 
-lista1 = [random.randrange(-50,101) for i in range(10)]
-lista2 = [-2*7**2-10*t+111 for t in range(17)]
+# lista1 = [random.randrange(-50,101) for i in range(10)]
+# lista2 = [-2*7**2-10*t+111 for t in range(17)]
 
-print(lista1)
-print(lista2)
+# print(lista1)
+# print(lista2)
 
-wynik = porownanie(lista1, lista2)
-print(wynik)
+# wynik = porownanie(lista1, lista2)
+# print(wynik)
+
+#zad6
+# def tworzenie_slownika(wyraz):
+#     slownik = {}
+#     dlug = len(wyraz)
+#     for i in range(0,dlug):
+#         if wyraz[i] in slownik.keys():
+#             slownik[wyraz[i]] += 1
+#         else:
+#             slownik[wyraz[i]]=1
+#     return slownik
+
+def laczenie_slownika(wyraz1, wyraz2):
+    slownik = {}
+    dlug1 = len(wyraz1)
+    for i in range(0,dlug1):
+        if wyraz1[i] in slownik.keys():
+            slownik[wyraz1[i]] += 1
+        else:
+            slownik[wyraz1[i]]=1
+    dlug2 = len(wyraz2)
+    for i in range(0,dlug2):
+        if wyraz2[i] in slownik.keys():
+            slownik[wyraz2[i]] += 1
+        else:
+            slownik[wyraz2[i]]=1
+    return slownik
+   
+
+jeden = input("podaj pierwszy wyraz: ")
+dwa = input("podaj drugi wyraz: ")
+
+wspolny = {}
+
+koncowy = laczenie_slownika(jeden, dwa)
+print(koncowy)
