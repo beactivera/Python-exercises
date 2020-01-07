@@ -92,27 +92,52 @@ import random
 #             slownik[wyraz[i]]=1
 #     return slownik
 
-def laczenie_slownika(wyraz1, wyraz2):
-    slownik = {}
-    dlug1 = len(wyraz1)
-    for i in range(0,dlug1):
-        if wyraz1[i] in slownik.keys():
-            slownik[wyraz1[i]] += 1
-        else:
-            slownik[wyraz1[i]]=1
-    dlug2 = len(wyraz2)
-    for i in range(0,dlug2):
-        if wyraz2[i] in slownik.keys():
-            slownik[wyraz2[i]] += 1
-        else:
-            slownik[wyraz2[i]]=1
-    return slownik
+# def laczenie_slownika(wyraz1, wyraz2):
+#     slownik = {}
+#     dlug1 = len(wyraz1)
+#     for i in range(0,dlug1):
+#         if wyraz1[i] in slownik.keys():
+#             slownik[wyraz1[i]] += 1
+#         else:
+#             slownik[wyraz1[i]]=1
+#     dlug2 = len(wyraz2)
+#     for i in range(0,dlug2):
+#         if wyraz2[i] in slownik.keys():
+#             slownik[wyraz2[i]] += 1
+#         else:
+#             slownik[wyraz2[i]]=1
+#     return slownik
    
 
-jeden = input("podaj pierwszy wyraz: ")
-dwa = input("podaj drugi wyraz: ")
+# jeden = input("podaj pierwszy wyraz: ")
+# dwa = input("podaj drugi wyraz: ")
 
-wspolny = {}
+# wspolny = {}
 
-koncowy = laczenie_slownika(jeden, dwa)
-print(koncowy)
+# koncowy = laczenie_slownika(jeden, dwa)
+# print(koncowy)
+
+#zad7
+
+def funkcja(n):
+    if n==1:
+        return 1
+    else: 
+        for k in range(math.ceil(math.sqrt(n))+1):
+            if math.pow(k,2)<=n and math.pow(k+1,2)>n:
+                return k
+
+lista = []
+        
+for k in range(10):
+    n = random.randint(1,101)
+    print(n)
+
+    while n>=1:    
+        liczba = funkcja(n)
+        print(liczba,sep='',end=' ')
+        n=n-(math.pow(liczba,2))
+
+    print()
+
+
