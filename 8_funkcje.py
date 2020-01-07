@@ -118,26 +118,46 @@ import random
 # print(koncowy)
 
 #zad7
+# def funkcja(n):
+#     if n==1:
+#         return 1
+#     else: 
+#         for k in range(math.ceil(math.sqrt(n))+1):
+#             if math.pow(k,2)<=n and math.pow(k+1,2)>n:
+#                 return k
 
-def funkcja(n):
-    if n==1:
-        return 1
-    else: 
-        for k in range(math.ceil(math.sqrt(n))+1):
-            if math.pow(k,2)<=n and math.pow(k+1,2)>n:
-                return k
-
-lista = []
+# lista = []
         
-for k in range(10):
-    n = random.randint(1,101)
-    print(n)
+# for k in range(10):
+#     n = random.randint(1,101)
+#     print(n)
 
-    while n>=1:    
-        liczba = funkcja(n)
-        print(liczba,sep='',end=' ')
-        n=n-(math.pow(liczba,2))
+#     while n>=1:    
+#         liczba = funkcja(n)
+#         print(liczba,sep='',end=' ')
+#         n=n-(math.pow(liczba,2))
 
-    print()
+#     print()
 
+#zad8
+def liczby_pierwsze(a, b):
+    lista = []
+    for i in range(a, b):
+        for x in range(2,i):
+             if i % x == 0:
+                 break
+             else:
+                 if( x == i-1):
+                     lista.append(i)
+        if i == b-1:
+            print('Liczby pierwsze: ')
+            print(lista)
+             
+
+# lista_poczatkowa = []
+# for i in range(100,500):
+#     lista_poczatkowa.append(i)
+# print(lista_poczatkowa)   
+    
+liczby = liczby_pierwsze(100,500)
 
