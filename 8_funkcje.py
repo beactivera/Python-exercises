@@ -140,24 +140,23 @@ import random
 #     print()
 
 #zad8
-def liczby_pierwsze(a, b):
-    lista = []
-    for i in range(a, b):
-        for x in range(2,i):
-             if i % x == 0:
-                 break
-             else:
-                 if( x == i-1):
-                     lista.append(i)
-        if i == b-1:
-            print('Liczby pierwsze: ')
-            print(lista)
+def czy_pierwsza(n):
+    if n % 2 == 0:
+        print('nie')
+    else:
+        print('tak')
              
 
-# lista_poczatkowa = []
-# for i in range(100,500):
-#     lista_poczatkowa.append(i)
-# print(lista_poczatkowa)   
-    
-liczby = liczby_pierwsze(100,500)
+lista_poczatkowa = []
+for i in range(100,500):
+    lista_poczatkowa.append(i)
+print(lista_poczatkowa)   
+
+for k in range(len(lista_poczatkowa)):
+    liczba = czy_pierwsza(lista_poczatkowa[k])
+    if liczba == "nie":
+        lista_poczatkowa.pop(liczba)
+
+print(lista_poczatkowa)
+
 
