@@ -183,6 +183,32 @@ import random
 
 # zad 11
 
+# def silnia(liczba):
+
+#     a = 1
+
+#     for x in range(1, liczba + 1):
+#         a = a * x
+
+#     return a
+
+# def suma_szeregu(k):
+
+#     elementy_szeregu = []
+
+#     for x in range(k+1):
+#         elementy_szeregu.append(1/(silnia(k)))
+
+#     return sum(elementy_szeregu)
+
+# print(suma_szeregu(100))
+# print(suma_szeregu(1000))
+# print(suma_szeregu(10000))
+
+# zad12
+
+from time import time
+
 def silnia(liczba):
 
     a = 1
@@ -192,17 +218,47 @@ def silnia(liczba):
 
     return a
 
-def suma_szeregu(k):
+def silnia_rekurencja(liczba):
+
+    if liczba == 1 or liczba == 0:
+        return 1
+    else:
+        return liczba * silnia_rekurencja(liczba - 1)
+
+def suma_szeregu(k, funkcja_silni):
 
     elementy_szeregu = []
 
     for x in range(k+1):
-        elementy_szeregu.append(1/(silnia(k)))
+        elementy_szeregu.append(1/(funkcja_silni(k)))
 
     return sum(elementy_szeregu)
 
-print(suma_szeregu(100))
-print(suma_szeregu(1000))
-print(suma_szeregu(10000))
+
+print('Test - iteracyjna funkcja silni')
+
+start = time()
+
+print(suma_szeregu(100, silnia))
+print(suma_szeregu(400, silnia))
+print(suma_szeregu(800, silnia))
+
+koniec = time()
+
+print('Wynik:', round(koniec-start, 2), 's')
+
+print('Test - rekurencyjna funkcja silni')
+
+start = time()
+
+print(suma_szeregu(100, silnia_rekurencja))
+print(suma_szeregu(400, silnia_rekurencja))
+print(suma_szeregu(800, silnia_rekurencja))
+
+
+koniec = time()
+
+print('Wynik:', round(koniec-start, 2), 's')
+
 
 
