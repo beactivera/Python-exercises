@@ -141,22 +141,15 @@ import random
 
 #zad8
 def czy_pierwsza(n):
-    if n % 2 == 0:
-        print('nie')
-    else:
-        print('tak')
-             
 
-lista_poczatkowa = []
-for i in range(100,500):
-    lista_poczatkowa.append(i)
-print(lista_poczatkowa)   
+    for x in range(2, n//2):
+        if n % x == 0:
+            return False
+    
+    return True
 
-for k in range(len(lista_poczatkowa)):
-    liczba = czy_pierwsza(lista_poczatkowa[k])
-    if liczba == "nie":
-        lista_poczatkowa.pop(liczba)
+lista_poczatkowa = [x for x in range(100, 500)]
+lista_koncowa = [x for x in lista_poczatkowa if not czy_pierwsza(x)]
 
-print(lista_poczatkowa)
-
+print(lista_koncowa)
 
