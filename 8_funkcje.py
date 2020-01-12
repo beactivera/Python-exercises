@@ -297,32 +297,79 @@ import random
 
 # zad14
 
-def suma_cyfr_w_liczbie(n):
+# def suma_cyfr_w_liczbie(n):
 
-    pierwsza = n % 10
-    druga = n // 10
+#     pierwsza = n % 10
+#     druga = n // 10
 
-    return pierwsza + druga
-
-
-def stworz_slownik():
-
-    slownik = {}
-
-    for x in range(1, 101):
-        if suma_cyfr_w_liczbie(x) in slownik.keys():
-            slownik[suma_cyfr_w_liczbie(x)] += 1
-        else:
-            slownik[suma_cyfr_w_liczbie(x)] = 1
-
-    print(slownik)
-
-stworz_slownik()
+#     return pierwsza + druga
 
 
+# def stworz_slownik():
+
+#     slownik = {}
+
+#     for x in range(1, 101):
+#         if suma_cyfr_w_liczbie(x) in slownik.keys():
+#             slownik[suma_cyfr_w_liczbie(x)] += 1
+#         else:
+#             slownik[suma_cyfr_w_liczbie(x)] = 1
+
+#     print(slownik)
+
+# stworz_slownik()
+
+# zad16
+
+def zwroc_maciez_zerowa(n, k = -1):
+
+    if k == -1:
+        k = n
+
+    macierz = []
+
+    for wiersz in range(k):
+
+        w = []
+
+        for kolumna in range(n):
+
+            w.append(0)
+
+        macierz.append(w)
+    
+    return macierz
+
+
+def wypisz_macierz(m):
+
+    for w in m:
+        for k in w:
+            print(k, end=' ')
+        print()
+
+
+def zwroc_maciez_identycznosciowa(n):
+
+    tmp_macierz = zwroc_maciez_zerowa(n, n)
+
+    for x in range(len(tmp_macierz)):
+        for y in range(len(tmp_macierz[0])):
+            if x == y:
+                tmp_macierz[x][y] = 1
+
+    return tmp_macierz
 
 
 
+
+m_1 = zwroc_maciez_zerowa(3)
+wypisz_macierz(m_1)
+
+print()
+
+m_2 = zwroc_maciez_identycznosciowa(4)
+wypisz_macierz(m_2)
 
 
 
