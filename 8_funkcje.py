@@ -155,15 +155,31 @@ import random
 
 #zad9
 
-import func as f
+# import func as f
 
-x = int(input('Podaj 1 liczbe: '))
-y = int(input('Podaj 2 liczbe: '))
+# x = int(input('Podaj 1 liczbe: '))
+# y = int(input('Podaj 2 liczbe: '))
 
-print(f.stworz_liste(x))
-print(f.stworz_liste(y))
-print(f.stworz_liste(2*x, y))
+# print(f.stworz_liste(x))
+# print(f.stworz_liste(y))
+# print(f.stworz_liste(2*x, y))
 
+#zad10
+
+def suma_dzielnikow(liczba):
+
+    dzielniki = []
+
+    for x in range(1, liczba):
+        if liczba % x == 0:
+            dzielniki.append(x)
+
+    return sum(dzielniki)
+
+for x in range(1, 10001):
+
+    if suma_dzielnikow(x) == x:
+        print(x)
 
 
 
