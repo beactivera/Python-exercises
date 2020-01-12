@@ -362,13 +362,7 @@ def zwroc_maciez_identycznosciowa(n):
 
 
 def zwroc_iloczyn_macierzy(m_1, m_2):
-
-    
-
-
-
-
-
+    pass
 
 m_1 = zwroc_maciez_zerowa(3)
 wypisz_macierz(m_1)
@@ -377,6 +371,8 @@ print()
 
 m_2 = zwroc_maciez_identycznosciowa(4)
 wypisz_macierz(m_2)
+
+# wczytywanie z pliku txt  
 
 
 
