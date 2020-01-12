@@ -262,38 +262,65 @@ import random
 
 # zad13
 
-def fibo(n):
+# def fibo(n):
 
-    a = 1
-    b = 1
+#     a = 1
+#     b = 1
 
-    zwracana = 1 
+#     zwracana = 1 
 
-    for x in range(n):
+#     for x in range(n):
 
-        zwracana = a
+#         zwracana = a
 
-        suma_a_b = a + b
-        a = b 
-        b = suma_a_b 
+#         suma_a_b = a + b
+#         a = b 
+#         b = suma_a_b 
         
-    return zwracana
+#     return zwracana
 
 
-def element_ciag_1(n):
+# def element_ciag_1(n):
 
-    return fibo(n) - (1/math.sqrt(5)) * ((1 + math.sqrt(5))/2)**n
+#     return fibo(n) - (1/math.sqrt(5)) * ((1 + math.sqrt(5))/2)**n
 
-def element_ciag_2(n):
+# def element_ciag_2(n):
 
-    return ((fibo(n+1)/fibo(n)) - (1+math.sqrt(5))/2)
+#     return ((fibo(n+1)/fibo(n)) - (1+math.sqrt(5))/2)
 
-def wyswietl_k_elementow_ciagu(n, ciag):
+# def wyswietl_k_elementow_ciagu(n, ciag):
 
-    print([ciag(x) for x in range(n)])
+#     print([ciag(x) for x in range(n)])
 
-wyswietl_k_elementow_ciagu(10, element_ciag_1)
-wyswietl_k_elementow_ciagu(10, element_ciag_2)
+# wyswietl_k_elementow_ciagu(10, element_ciag_1)
+# wyswietl_k_elementow_ciagu(10, element_ciag_2)
+
+# zad14
+
+def suma_cyfr_w_liczbie(n):
+
+    pierwsza = n % 10
+    druga = n // 10
+
+    return pierwsza + druga
+
+
+def stworz_slownik():
+
+    slownik = {}
+
+    for x in range(1, 101):
+        if suma_cyfr_w_liczbie(x) in slownik.keys():
+            slownik[suma_cyfr_w_liczbie(x)] += 1
+        else:
+            slownik[suma_cyfr_w_liczbie(x)] = 1
+
+    print(slownik)
+
+stworz_slownik()
+
+
+
 
 
 
