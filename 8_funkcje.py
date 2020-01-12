@@ -361,6 +361,13 @@ def zwroc_maciez_identycznosciowa(n):
     return tmp_macierz
 
 
+def zwroc_iloczyn_macierzy(m_1, m_2):
+
+    
+
+
+
+
 
 
 m_1 = zwroc_maciez_zerowa(3)
