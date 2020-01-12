@@ -140,16 +140,30 @@ import random
 #     print()
 
 #zad8
-def czy_pierwsza(n):
+# def czy_pierwsza(n):
 
-    for x in range(2, n//2):
-        if n % x == 0:
-            return False
+#     for x in range(2, n//2):
+#         if n % x == 0:
+#             return False
     
-    return True
+#     return True
 
-lista_poczatkowa = [x for x in range(100, 500)]
-lista_koncowa = [x for x in lista_poczatkowa if not czy_pierwsza(x)]
+# lista_poczatkowa = [x for x in range(100, 500)]
+# lista_koncowa = [x for x in lista_poczatkowa if not czy_pierwsza(x)]
 
-print(lista_koncowa)
+# print(lista_koncowa)
+
+#zad9
+
+import func as f
+
+x = int(input('Podaj 1 liczbe: '))
+y = int(input('Podaj 2 liczbe: '))
+
+print(f.stworz_liste(x))
+print(f.stworz_liste(y))
+print(f.stworz_liste(2*x, y))
+
+
+
 
