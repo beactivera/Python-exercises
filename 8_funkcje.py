@@ -207,58 +207,98 @@ import random
 
 # zad12
 
-from time import time
+# from time import time
 
-def silnia(liczba):
+# def silnia(liczba):
+
+#     a = 1
+
+#     for x in range(1, liczba + 1):
+#         a = a * x
+
+#     return a
+
+# def silnia_rekurencja(liczba):
+
+#     if liczba == 1 or liczba == 0:
+#         return 1
+#     else:
+#         return liczba * silnia_rekurencja(liczba - 1)
+
+# def suma_szeregu(k, funkcja_silni):
+
+#     elementy_szeregu = []
+
+#     for x in range(k+1):
+#         elementy_szeregu.append(1/(funkcja_silni(k)))
+
+#     return sum(elementy_szeregu)
+
+
+# print('Test - iteracyjna funkcja silni')
+
+# start = time()
+
+# print(suma_szeregu(100, silnia))
+# print(suma_szeregu(400, silnia))
+# print(suma_szeregu(800, silnia))
+
+# koniec = time()
+
+# print('Wynik:', round(koniec-start, 2), 's')
+
+# print('Test - rekurencyjna funkcja silni')
+
+# start = time()
+
+# print(suma_szeregu(100, silnia_rekurencja))
+# print(suma_szeregu(400, silnia_rekurencja))
+# print(suma_szeregu(800, silnia_rekurencja))
+
+
+# koniec = time()
+
+# print('Wynik:', round(koniec-start, 2), 's')
+
+# zad13
+
+def fibo(n):
 
     a = 1
+    b = 1
 
-    for x in range(1, liczba + 1):
-        a = a * x
+    zwracana = 1 
 
-    return a
+    for x in range(n):
 
-def silnia_rekurencja(liczba):
+        zwracana = a
 
-    if liczba == 1 or liczba == 0:
-        return 1
-    else:
-        return liczba * silnia_rekurencja(liczba - 1)
-
-def suma_szeregu(k, funkcja_silni):
-
-    elementy_szeregu = []
-
-    for x in range(k+1):
-        elementy_szeregu.append(1/(funkcja_silni(k)))
-
-    return sum(elementy_szeregu)
+        suma_a_b = a + b
+        a = b 
+        b = suma_a_b 
+        
+    return zwracana
 
 
-print('Test - iteracyjna funkcja silni')
+def element_ciag_1(n):
 
-start = time()
+    return fibo(n) - (1/math.sqrt(5)) * ((1 + math.sqrt(5))/2)**n
 
-print(suma_szeregu(100, silnia))
-print(suma_szeregu(400, silnia))
-print(suma_szeregu(800, silnia))
+def element_ciag_2(n):
 
-koniec = time()
+    return ((fibo(n+1)/fibo(n)) - (1+math.sqrt(5))/2)
 
-print('Wynik:', round(koniec-start, 2), 's')
+def wyswietl_k_elementow_ciagu(n, ciag):
 
-print('Test - rekurencyjna funkcja silni')
+    print([ciag(x) for x in range(n)])
 
-start = time()
-
-print(suma_szeregu(100, silnia_rekurencja))
-print(suma_szeregu(400, silnia_rekurencja))
-print(suma_szeregu(800, silnia_rekurencja))
+wyswietl_k_elementow_ciagu(10, element_ciag_1)
+wyswietl_k_elementow_ciagu(10, element_ciag_2)
 
 
-koniec = time()
 
-print('Wynik:', round(koniec-start, 2), 's')
+
+
 
 
 
