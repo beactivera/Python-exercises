@@ -166,20 +166,43 @@ import random
 
 #zad10
 
-def suma_dzielnikow(liczba):
+# def suma_dzielnikow(liczba):
 
-    dzielniki = []
+#     dzielniki = []
 
-    for x in range(1, liczba):
-        if liczba % x == 0:
-            dzielniki.append(x)
+#     for x in range(1, liczba):
+#         if liczba % x == 0:
+#             dzielniki.append(x)
 
-    return sum(dzielniki)
+#     return sum(dzielniki)
 
-for x in range(1, 10001):
+# for x in range(1, 10001):
 
-    if suma_dzielnikow(x) == x:
-        print(x)
+#     if suma_dzielnikow(x) == x:
+#         print(x)
 
+# zad 11
+
+def silnia(liczba):
+
+    a = 1
+
+    for x in range(1, liczba + 1):
+        a = a * x
+
+    return a
+
+def suma_szeregu(k):
+
+    elementy_szeregu = []
+
+    for x in range(k+1):
+        elementy_szeregu.append(1/(silnia(k)))
+
+    return sum(elementy_szeregu)
+
+print(suma_szeregu(100))
+print(suma_szeregu(1000))
+print(suma_szeregu(10000))
 
 
