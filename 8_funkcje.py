@@ -372,6 +372,11 @@ print()
 m_2 = zwroc_maciez_identycznosciowa(4)
 wypisz_macierz(m_2)
 
+
+# mnozenie macierzy
+
+http://enroute.pl/obliczenia-na-macierzach-numpy/
+
 # wczytywanie z pliku txt  
 
 
