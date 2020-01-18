@@ -1,4 +1,4 @@
-def czy_pierwsza(n):
+def czy_pierwsza(n): 
 
     for x in range(2, n//2):
         if n % x == 0:
