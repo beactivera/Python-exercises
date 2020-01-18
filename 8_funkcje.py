@@ -1,6 +1,7 @@
 import math
 import random
-#zad1
+
+#zad1 
 # def f(x):
 #     if x>=-1:
 #         x=x**2+6*x-2
@@ -82,40 +83,40 @@ import random
 # print(wynik)
 
 #zad6
-# def tworzenie_slownika(wyraz):
-#     slownik = {}
-#     dlug = len(wyraz)
-#     for i in range(0,dlug):
-#         if wyraz[i] in slownik.keys():
-#             slownik[wyraz[i]] += 1
-#         else:
-#             slownik[wyraz[i]]=1
-#     return slownik
+def tworzenie_slownika(wyraz):
+    slownik = {}
+    dlug = len(wyraz)
+    for i in range(0,dlug):
+        if wyraz[i] in slownik.keys():
+            slownik[wyraz[i]] += 1
+        else:
+            slownik[wyraz[i]]=1
+    return slownik
 
-# def laczenie_slownika(wyraz1, wyraz2):
-#     slownik = {}
-#     dlug1 = len(wyraz1)
-#     for i in range(0,dlug1):
-#         if wyraz1[i] in slownik.keys():
-#             slownik[wyraz1[i]] += 1
-#         else:
-#             slownik[wyraz1[i]]=1
-#     dlug2 = len(wyraz2)
-#     for i in range(0,dlug2):
-#         if wyraz2[i] in slownik.keys():
-#             slownik[wyraz2[i]] += 1
-#         else:
-#             slownik[wyraz2[i]]=1
-#     return slownik
+def laczenie_slownika(wyraz1, wyraz2):
+    slownik = {}
+    dlug1 = len(wyraz1)
+    for i in range(0,dlug1):
+        if wyraz1[i] in slownik.keys():
+            slownik[wyraz1[i]] += 1
+        else:
+            slownik[wyraz1[i]]=1
+    dlug2 = len(wyraz2)
+    for i in range(0,dlug2):
+        if wyraz2[i] in slownik.keys():
+            slownik[wyraz2[i]] += 1
+        else:
+            slownik[wyraz2[i]]=1
+    return slownik
    
 
-# jeden = input("podaj pierwszy wyraz: ")
-# dwa = input("podaj drugi wyraz: ")
+jeden = input("podaj pierwszy wyraz: ")
+dwa = input("podaj drugi wyraz: ")
 
-# wspolny = {}
+wspolny = {}
 
-# koncowy = laczenie_slownika(jeden, dwa)
-# print(koncowy)
+koncowy = laczenie_slownika(jeden, dwa)
+print(koncowy)
 
 #zad7
 # def funkcja(n):
@@ -321,58 +322,58 @@ import random
 
 # zad16
 
-def zwroc_maciez_zerowa(n, k = -1):
+# def zwroc_maciez_zerowa(n, k = -1):
 
-    if k == -1:
-        k = n
+#     if k == -1:
+#         k = n
 
-    macierz = []
+#     macierz = []
 
-    for wiersz in range(k):
+#     for wiersz in range(k):
 
-        w = []
+#         w = []
 
-        for kolumna in range(n):
+#         for kolumna in range(n):
 
-            w.append(0)
+#             w.append(0)
 
-        macierz.append(w)
+#         macierz.append(w)
     
-    return macierz
+#     return macierz
 
 
-def wypisz_macierz(m):
+# def wypisz_macierz(m):
 
-    for w in m:
-        for k in w:
-            print(k, end=' ')
-        print()
-
-
-def zwroc_maciez_identycznosciowa(n):
-
-    tmp_macierz = zwroc_maciez_zerowa(n, n)
-
-    for x in range(len(tmp_macierz)):
-        for y in range(len(tmp_macierz[0])):
-            if x == y:
-                tmp_macierz[x][y] = 1
-
-    return tmp_macierz
+#     for w in m:
+#         for k in w:
+#             print(k, end=' ')
+#         print()
 
 
-def zwroc_iloczyn_macierzy(m_1, m_2):
-    pass
+# def zwroc_maciez_identycznosciowa(n):
 
-m_1 = zwroc_maciez_zerowa(3)
-wypisz_macierz(m_1)
+#     tmp_macierz = zwroc_maciez_zerowa(n, n)
 
-print()
+#     for x in range(len(tmp_macierz)):
+#         for y in range(len(tmp_macierz[0])):
+#             if x == y:
+#                 tmp_macierz[x][y] = 1
 
-m_2 = zwroc_maciez_identycznosciowa(4)
-wypisz_macierz(m_2)
+#     return tmp_macierz
 
-# wczytywanie z pliku txt  
+
+# def zwroc_iloczyn_macierzy(m_1, m_2):
+#     pass
+
+# m_1 = zwroc_maciez_zerowa(3)
+# wypisz_macierz(m_1)
+
+# print()
+
+# m_2 = zwroc_maciez_identycznosciowa(4)
+# wypisz_macierz(m_2)
+
+# # wczytywanie z pliku txt  
 
 
 

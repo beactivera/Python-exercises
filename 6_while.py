@@ -1,5 +1,5 @@
 import math
-import random
+import random 
 
 #zad1
 # liczba = int(input("podaj liczbe: "))

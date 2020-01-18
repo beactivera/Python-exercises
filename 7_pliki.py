@@ -1,6 +1,6 @@
 import linecache
 import string
-#zad1
+#zad1 
 
 # text = open('cytaty.txt')
 # text.read()
